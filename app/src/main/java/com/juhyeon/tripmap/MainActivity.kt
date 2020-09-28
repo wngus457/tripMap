@@ -3,8 +3,7 @@ package com.juhyeon.tripmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import com.juhyeon.tripmap.kakao.GlobalApplication
+import com.juhyeon.tripmap.kakao.KakaoSetting
 import com.kakao.sdk.auth.LoginClient
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -13,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        GlobalApplication()
+        KakaoSetting()
 
         // 카카오계정으로 로그인
         kakaoLoginBtn.setOnClickListener {
@@ -23,8 +22,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 else if (token != null) {
                     Log.d("MainActivity", "로그인 성공")
-                }else{
-                    Log.d("MainActivity", "실패")
                 }
             }
         }
