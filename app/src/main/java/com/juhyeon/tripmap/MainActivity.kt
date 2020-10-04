@@ -12,18 +12,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        KakaoSetting()
-
-        // 카카오계정으로 로그인
-        kakaoLoginBtn.setOnClickListener {
-            LoginClient.instance.loginWithKakaoAccount(applicationContext) { token, error ->
-                if (error != null) {
-                    Log.d("MainActivity", "로그인 실패")
-                }
-                else if (token != null) {
-                    Log.d("MainActivity", "로그인 성공")
-                }
-            }
-        }
     }
 }
