@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TripMap</string>
     <string name="kakao_key_native">abbda72ba7365773959afeeeff4c46bb</string>
+    <string name="google_client_id">159044549110-nl18svotr4mq7j26fssj0rtcaa0su5kc.apps.googleusercontent.com</string>
 </resources>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "159044549110-dn6docngbeq85qcmi68jq3trg0ilpn8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.juhyeon.tripmap",
+            "certificate_hash": "4410970da908c617ceb4bdddbf4aa0d1b4a318c1"
+          }
+        },
+        {
           "client_id": "159044549110-82k1b5tme57etoio907b7tb9tbaog6bl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
