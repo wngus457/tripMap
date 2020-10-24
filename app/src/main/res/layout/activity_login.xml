@@ -13,27 +13,49 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:id="@+id/LoginId"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:id="@+id/LoginPassWord"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LoginId"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/checkBoxLayout"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPassWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <CheckBox
+            android:id="@+id/password_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 저장"
+            />
+        <CheckBox
+            android:id="@+id/autoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자동로그인"/>
+    </LinearLayout>
     <com.google.android.gms.common.SignInButton
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/googleLoginBtn"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/LoginPassWord"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -42,8 +64,8 @@
         android:layout_marginTop="20dp"
         android:id="@+id/kakaoLoginBtn"
         android:background="@drawable/kakao_login_medium_narrow"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/googleLoginBtn"/>
 
     <Button
@@ -54,15 +76,15 @@
         android:id="@+id/normalLoginBtn"
         android:text="로그인"
         app:layout_constraintTop_toBottomOf="@+id/kakaoLoginBtn"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원가입"
         android:id="@+id/signUpText"
         app:layout_constraintTop_toBottomOf="@+id/normalLoginBtn"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
